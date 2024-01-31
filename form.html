@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+</head>
+
+
+<body>
+    <form name="Myform"></form>
+    Name: <input type="text" name="name" id="name"><br>
+    Roll: <input type="text" name="roll" id="roll"><br>
+    Address: <select name="address" id="address"> <br>
+        <option value="lalitpur">Lalitpur</option>
+        <option value="kathmandu">Kathmandu</option>
+
+    </select>
+    <br><input type="button" value="Register" onclick="validate();">
+
+</body>
+<script type="text/javascript">
+    function validate(){
+        if(document.Myform.name.value==" ")
+        {
+            alert("Enter your name");
+            document.Myform.name.focus();
+            return;
+        }
+        else if(document.Myform.roll.value==" " && document.Myform.roll.value.length!=4)
+        {
+            alert("Enter your correct roll no");
+            document.Myform.roll.focus();
+            return;
+        }
+    }
+    </script>
+</html>

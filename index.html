@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balkrishna's diet</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/diet1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: 'Work Sans', sans-serif;
+        }
+
+
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid blue; */
+            position: absolute;
+            left: 30px;
+            top: 20px;
+            line-height: 16px;
+            font-size: 18px;
+            text-align: center;
+
+        }
+
+        .left img {
+            width: 100px;
+            /* background-color: transparent; */
+            /* filter: invert(100%);  black img to white*/
+        }
+
+        .left div {
+            text-align: center;
+
+            position: absolute;
+
+        }
+
+        .center {
+            width: 40%;
+            display: block;
+            margin: 41px auto;
+            /* border: 2px solid green; */
+            background-color: transparent;
+
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid brown; */
+            position: absolute;
+            right: 30px;
+            top: 33px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: black;
+            padding: 12px 23px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: rgb(119, 113, 113);
+        }
+
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(95, 95, 95);
+        }
+
+        .background img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .btn {
+            font-family: 'Work Sans', sans-serif;
+            padding: 8px 14px;
+            border-radius: 15px;
+            border: 2px solid grey;
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(204, 202, 202);
+        }
+
+        .container {
+            border: 2px solid black;
+            margin: 100px 60px;
+            padding: 80px;
+            width: 33%;
+            border-radius: 20px;
+        }
+
+        .form-group input {
+            text-align: center;
+            margin: 8px auto;
+            padding: 5px;
+            display: block;
+            border: 2px solid black;
+            width: 366px;
+            font-size: 20px;
+            border-radius: 10px;
+            font-family: 'Work Sans', sans-serif;
+
+
+
+        }
+
+        .container button {
+            display: block;
+            margin: 5px auto;
+            width: 380px;
+            color: white;
+            font-size: 20px;
+
+        }
+
+        .container h2 {
+            text-align: center;
+            color:black;
+            background-color:rgb(151, 150, 150);
+        }
+    </style>
+</head>
+
+<body>
+    </div>
+    <div class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="logo">
+            <div>Balkrishna diet</div>
+
+        </div>
+
+        <!-- center box for nav bar -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Diet Plan</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <h2> Get the best Diet Plan in Kathmandu Now</h2>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Phone Number">
+            </div>
+            <div class="form-group">
+                <input type="text" name=" " placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>
